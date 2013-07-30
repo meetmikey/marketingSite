@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Meet Mikey.</title>
+<meta name="description" content="A better way to find things in your Gmail.">
+<meta name="author" content="">
+
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/mikey.css" rel="stylesheet">
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/pfbeimpckikjpnjhcbpikdjnelnblhnn">
+
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+<link rel="shortcut icon" href="/img/mikey.ico" type="img/x-icon">
+<link rel="icon" href="/img/mikey.ico" type="image/x-icon">
+
+<script src="js/jquery-min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+  if (document.getElementById('extension-is-installed')) {
+    document.getElementById('install-button').style.display = 'none';
+  }
+
+  var chromeSuccess = function () {
+    console.log ('success');
+    $('#install-button').text ('Installed!');
+    $('#install-button').attr ('disabled', true);
+  }
+
+  var chromeFail = function (err) {
+    console.log ('fail', err);
+  }
+
+</script>
+
+
+</head>
+
+<body>
+
+
+
+<div class="two-band">
+
+<div class="container" style="padding: 0px;">
+<h1 class="page-title">Premium Terms of Service</h1>
+
+
+<p>Mikey for Gmail (Mikey) offers you the option of increasing your account storage space beyond 30 days for a fee. By doing so, your account will be converted to a Premium Account and will not be subject to some of the restrictions placed on Free Accounts as described below.</p>
+
+<p>Mikey accepts credit cards and will automatically charge your credit card monthly or yearly, depending upon which Premium Account you select. If any fee is not paid in a timely manner, or Mikey is unable to process your transaction using the credit card information provided, Mikey reserves the right to revert your account back to a free version.</p> 
+
+<h2>Billing</h2>
+
+<p>The fees for your Premium Account will be billed from the date you convert to a Premium Account and on each monthly or yearly renewal thereafter unless and until you cancel your account. Click on the link on your "Account" page to see the commencement date for your next renewal period. Mikey will automatically bill your credit card each month or year on the calendar day corresponding to the commencement of your Premium Account. In the event your Premium Account began on a day not contained in a given month or year, Mikey will bill your credit card on the last day of such month or year. For example, if your Premium Account began on January 31st, February 28th is the next time your credit card would be billed. You acknowledge that the amount billed each month or year may vary for reasons that include, differing amounts due to promotional offers, differing amounts due to changes in your account, or changes in the amount of applicable sales tax, and you authorize us to charge your credit card for such varying amounts. Mikey may also periodically authorize your credit card in anticipation of account or related charges. All fees and charges are nonrefundable and there are no refunds or credits for partially used periods.</p>
+
+<p>Should you elect to upgrade your Premium Account to a larger archive of days, the commencement date for your next renewal period will be reset and you will be billed for the first month or year of the upgraded level of service on a pro-rata basis. For example, if you begin your monthly billed Premium Account on February 15th, your next payment would be due on March 15th. On March 22, you upgrade your Premium Account to a larger amount of storage space and pay the new amount associated with the upgraded Premium Account you have selected, less the amount equal to 7 days at your previous Premium Account rate. Your next payment would then be due on April 22.</p>
+
+<p>Mikey may change the fees and charges in effect, or add new fees and charges from time to time, but we will give you advance notice of these changes by email. It is your responsibility to keep your contact information and payment information current and updated.</p>
+
+<h2>Cancelling Your Account</h2>
+
+<p>Your Mikey Premium Account will continue in effect unless and until you cancel your Premium Account or we terminate it. You must cancel your Premium Account before it renews each month or year in order to avoid billing of the next month's or year's fees to your credit card. Mikey will bill the monthly or yearly fees associated with your Premium Account plus any applicable tax to the credit card you provide to us during registration (or to a different credit card if you change your account information).</p>
+
+<p>Mikey Premium Accounts are prepaid and are non-refundable. MIKEY DOES NOT PROVIDE REFUNDS OR CREDITS FOR ANY PARTIAL MONTHS OR YEARS. You may cancel your Mikey Premium Account at anytime, and cancellation will be effective immediately. If you wish to cancel your Premium Account you may do so via the Mikey dropdown within Gmail. Should you elect to cancel your Premium Account, please note that you will not be issued a refund for the most recently (or any previously) charged monthly fees.</p>
+
+</p>By signing up for a Mikey Premium Account and providing Mikey with your payment account information, you hereby agree to these payment terms and conditions.</p>
+
+<h2>Free Accounts</h2>
+
+<p>Mikey allows you an archive up to 30 days free of charge. Mikey reserves the right to terminate Free Accounts at any time, with or without notice. Without limiting the generality of the foregoing, if a Free Account is inactive for ninety (90) days, then it may be terminated.</p>
+
+<p>For further information regarding your Mikey Premium or Free Account, please see the Mikey Terms of Service.</p>
+
+</div>
+</div>
+
+
+
+
+<div class="footer">
+  <div class="container">
+
+    <div class="footer-text" style="float:left;">
+      <a href="index.html" style="margin-left:0;"><img src="img/footer-logo.png" style="width:100px; margin-right:5px; display:inline-block; margin-top: -4px;"></a> is made by Sidekick Labs, Inc.
+    </div>
+    <div class="footer-text" style="float:right;">
+      <a href="jobs.html">Jobs</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="premium-terms">Mikey Premium Terms</a>
+      <a href="mailto:support@mikeyteam.com">Contact</a>
+    </div>
+
+</div>
+
+</div>
+
+
+
+<!-- Le javascript
+    ================================================== -->
+<script src="js/jquery-min.js"></script>
+<!-- <script type="text/javascript"> var win = $(window)
+
+win.scroll(function(){
+
+  winTop = win.scrollTop();
+
+  if (winTop >= 0 && winTop < 240) {
+    $('body').removeClass('color2 color3');
+    $('body').addClass('color1');
+  }
+
+  else if (winTop >= 240 && winTop < 860) {
+    $('body').removeClass('color1 color3');
+    $('body').addClass('color2');
+  }
+
+  else if (winTop >= 860 && winTop < 1520) {
+    $('body').removeClass('color1 color2');
+    $('body').addClass('color3');
+  }
+
+  else if (winTop >= 1520 && winTop < 1700) {
+    $('body').removeClass('color1 color3');
+    $('body').addClass('color2');
+  }
+
+  else if (winTop >= 1700 ) {
+    $('body').removeClass('color2 color3');
+    $('body').addClass('color1');
+  }
+
+
+
+});
+</script> -->
+
+<script type="text/javascript">
+
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-39249462-1']);
+ _gaq.push(['_trackPageview']);
+
+ (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+</script>
+
+</body>
+</html>
