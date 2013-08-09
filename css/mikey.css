@@ -478,13 +478,15 @@ text-align: left !important;
 
 
 .dark-b .site {
-background: none;
+background: none !important;
 color: #fff;
--moz-box-shadow: none;
--webkit-box-shadow: none;
-box-shadow: none;
-border: none;
+-moz-box-shadow: none !important;
+-webkit-box-shadow: none !important;
+box-shadow: none !important;
+border: none !important;
 }
+
+
 
 .lrdiscoverwidget .site {
 border-radius: none;
@@ -884,7 +886,6 @@ z-index: 1;
 	text-transform: uppercase;
 	font-size: 10px;
 	letter-spacing: 1px;
-	margin-top: 40px;
 	font-weight: bold;
 	color: #222;
 	display: block;
@@ -899,6 +900,4 @@ width: 30px;
 	margin-left: 6px;
 }
 
-.mm-table {
-	margin-bottom: 60px;
-}
+
