@@ -12,13 +12,14 @@ body {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	font-family: 'Open Sans', sans-serif;
-	background-color: #cee7fa;
+	background-color: #dbecf9;
 	color:#2c75ab;
 	font-size: 18px;
 	line-height: 24px;
 	-webkit-transition: background-color .2s linear;
 	-moz-transition: background-color .2s linear;
 	transition: background-color .2s linear;
+	text-rendering: optimizelegibility;
 	
 }
 
@@ -32,16 +33,6 @@ p {
 	margin-top: 20px;
 }
 
-.container {
-	width:none;
-  padding: 20px 20px 10px 20px;
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 940px;
-  }
-}
 
 
 .section {
@@ -133,14 +124,15 @@ a:hover .trial-button  {
 
 
 h1.page-title {
-	font-size: 72px;
-	line-height: 84px;
+	font-size: 48px;
+	line-height: 56px;
 	font-family:'Rokkitt', serif;
+	text-transform: uppercase;
 }
 
 h2 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 30px;
+	font-size: 28px;
 	line-height: 36px;
 	padding-top: 20px;
 	color: #115272;
@@ -180,12 +172,6 @@ strong {
 	color: #fff;
 }
 
-
-.mikey {
-	background-image: url('../img/mikey_silhouette.png') ;
-	height: 500px;
-	background-repeat: no-repeat;
-}
 
 .mikeyTalk {
 font-size: 28px;
@@ -596,6 +582,8 @@ height: 34px;
 
 .footer-text {
 	color:#2c75ab;
+	font-size: 14px;
+	line-height: 18px;
 }
 
 .footer-text a {
@@ -618,16 +606,16 @@ h1 {
 }
 
 h1.home {
-	color: #4D97D0;
+	color: #115272;
 	text-transform: uppercase;
 	font-size: 18px;
 	text-align: center;
 	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 
 }
 
-.top-band {
+.one-band {
 	background-color: #4c99cb; 
 	position: fixed;
 	right: 0;
@@ -637,33 +625,35 @@ h1.home {
 }
 
 .two-band {
-	
+	background-color: #c2dff4;
 	padding-top: 60px;
 	padding-bottom: 40px;
 }
 
 
-.two-band.home {
-	background-color: #B7DAEF;
-	
-}
 
 .three-band {
-	background-color: #EBF6FC;
-	padding-bottom: 40px;
+padding: 20px 0px 20px 0px;
 
+}
+
+.footer-band {
+	background-color: #fff;
+	padding: 20px 0px 20px 0px;
+	margin-top: 20px;
 }
 
 .header-tagline {
 	font-family: 'Rokkitt', serif;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	margin-top: 10px;
+	margin-top: 18px;
 	opacity: 0.6;
 	font-size: 18px;
-	display: inline-block;
-	margin-left: 15px;
 	color: #fff;
+	width: auto;
+	white-space: normal;
+	font-weight: bold;
 }
 
 .download-button {
@@ -683,6 +673,7 @@ h1.home {
 	-moz-user-select: moz-none;
 	-ms-user-select: none;
 	user-select: none;
+	margin: 10px 10px 10px 0px;
 
 
 }
@@ -708,23 +699,22 @@ a.download-button:active {
 	background-color: #5fb072;
 }
 
-.header-logo {
-	width: 160px;
-	display: inline-block;
-}
+
 
 .logo-box {
-	padding-bottom: 10px;
-	display: inline-block;
+	margin: 15px 0px 10px 10px;
 }
+
+.header-logo {
+	width: 160px;
+}
+
 
 .carousel-control {
 	visibility: hidden;
 }
 
-.carousel {
-	padding-top: 20px;
-}
+
 
 .carousel:hover .carousel-control {
 	visibility: visible;
@@ -737,7 +727,7 @@ bottom: 0;
 left: 0;
 padding: 15px 20px 15px 20px;
 background: rgba(20, 88, 122, 1.0);
-/* background-color: #2D7CAD; */
+
 }
 
 .carousel-caption p {
@@ -785,6 +775,7 @@ opacity: 1;
 background-color: #4E98D0;
 filter: alpha(opacity=100);
 }
+
 
 .logo-block {
 	text-align: center;
@@ -842,7 +833,6 @@ filter: alpha(opacity=100);
 
 .profile-image {
 	width: 34px;
-	height: 34px;
 	float: left;
 	border-radius: 30px;
 	margin-right: 10px;
@@ -893,14 +883,7 @@ z-index: 1;
 	display: block;
 }
 
-.span1 {
-width: 30px;
-}
 
-.span8 {
-	width: 80%;
-	margin-left: 6px;
-}
 
 /* ------------------ TESTIMONIALS ------------------------ */
 
@@ -989,5 +972,95 @@ z-index: 1;
 .test-quote {
 	display: block;
 	margin-bottom: 30px;
+}
+
+.special-text {
+	padding-top: 100px;
+	font-size: 36px;
+	line-height: 40px;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 80px;
+	color: #fff;
+	margin-bottom: 20px;
+	text-align: center;
+	font-weight: 800;
+
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+	.footer-text {
+		font-size: 12px;
+	}
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+	.header-tagline {
+		font-size: 20px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.header-logo {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0px 10px 0px 10px;
+	}
+
+	.footer-text {
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	body {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.two-band {
+
+		background-color: #2c75ab;
+	}
+
+
+
+	.footer-text {
+		font-size: 12px;
+		text-align: center;
+	}
+
+	h1 {
+	font-size: 48px;
+	line-height: 52px;
+	font-family:'Rokkitt', serif;
+	text-transform: uppercase;
+	color: #2c75ab;
+	}
+
+
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
 }
 
