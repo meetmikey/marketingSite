@@ -3,23 +3,20 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Meet Mikey.</title>
-<meta name="description" content="A better way to find things in your Gmail.">
+<title>Meet Mikey. The best way to find things in your Gmail.</title>
+<meta name="description" content="Mikey is a Chrome extension that makes it easy to find pictures, links and files within your Gmail.">
 <meta name="author" content="">
 
 
-<link href="css/bootstrap.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 <link href="css/mikey.css" rel="stylesheet">
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/pfbeimpckikjpnjhcbpikdjnelnblhnn">
 
-<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
 
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
+<link href='https://fonts.googleapis.com/css?family=Rokkitt:400,700|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
 
 <link rel="shortcut icon" href="/img/mikey.ico" type="img/x-icon">
 <link rel="icon" href="/img/mikey.ico" type="image/x-icon">
@@ -28,14 +25,14 @@
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
 
-  if (document.getElementById('extension-is-installed')) {
-    document.getElementById('install-button').style.display = 'none';
-  }
+  setTimeout (function () {
+    if (document.getElementById('extension-is-installed')) {
+      document.getElementById('install-button').style.display = 'none';
+    }
+  }, 250);
 
   var chromeSuccess = function () {
     console.log ('success');
-    $('#install-button').text ('Installed!');
-    $('#install-button').attr ('disabled', true);
   }
 
   var chromeFail = function (err) {
@@ -51,10 +48,39 @@
 
 
 
-<div class="two-band">
+  <div class="one-band">
+    <div class="container">
+      <div class="row">
+        <div class="span3">
+          <div class="logo-box">
+            <div class="header-logo"><img src="img/logo.png"></div>
+          </div>
+        </div>
 
-<div class="container" style="padding: 0px;">
-<h1 class="page-title">Premium Terms of Service</h1>
+        <div class="span6">
+          <p class="header-tagline">The best way to find things in your Gmail</p>
+        </div>
+      
+      <div class="span3 hidden-phone hidden-tablet">
+        <div class="download-button hidden-phone hidden-tablet" id="install-button" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/pfbeimpckikjpnjhcbpikdjnelnblhnn', chromeSuccess, chromeFail)">Get Mikey for Gmail</div>
+
+        <a href="https://www.google.com/intl/en/chrome/browser/" id='wrong-browser' class="download-button" style='display:none;'>Get Chrome
+        </a>
+        <script type="text/javascript">
+        </script>
+      </div class="span2">
+  </div>
+    
+   
+    </div>
+  </div>
+
+
+
+
+  <div class="container three-band" style="padding-top:80px;">
+
+      <h1 class="page-title">Premium Terms of Service</h1>
 
 
 <p>Mikey for Gmail (Mikey) offers you the option of increasing your account storage space beyond 90 days for a fee. By doing so, your account will be converted to a Premium Account and will not be subject to some of the restrictions placed on Free Accounts as described below.</p>
@@ -83,37 +109,55 @@
 
 <p>For further information regarding your Mikey Premium or Free Account, please see the Mikey Terms of Service.</p>
 
-</div>
-</div>
 
 
 
+  </div>
 
-<div class="footer">
+
+
+  
+
+<div class="footer-band">
   <div class="container">
+    
+    <div class="row">
+      
+      <div class="span4">
+        <div class="footer-text">
+          <a href="index.html"><img src="img/footer-logo.png" style="width:100px; margin-right:5px; display:inline-block; margin-top: -4px;"></a> is made by Sidekick Labs.
+        </div>
+      </div>
 
-    <div class="footer-text" style="float:left;">
-      <a href="index.html" style="margin-left:0;"><img src="img/footer-logo.png" style="width:100px; margin-right:5px; display:inline-block; margin-top: -4px;"></a> is made by Sidekick Labs, Inc.
-    </div>
-    <div class="footer-text" style="float:right;">
-      <a href="jobs.html">Jobs</a>
-      <a href="faq.html">FAQ</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
-      <a href="premium-terms.html">Mikey Premium Terms</a>
-      <a href="mailto:support@mikeyteam.com">Contact</a>
+      <div class="span8">
+        <div class="footer-text">
+          <a href="jobs.html">Jobs</a>
+          <a href="faq.html">FAQ</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="premium-terms.html">Premium Terms</a>
+          <a href="mailto:support@mikeyteam.com">Contact</a>
+        </div>
+      </div>
+    
     </div>
 
+  </div>
 </div>
 
-</div>
+
+
+
+
+
 
 
 
 <!-- Le javascript
     ================================================== -->
-<script src="js/jquery-min.js"></script>
+<!-- Placed at the end of the document so the pages load faster -->
 <!-- <script type="text/javascript"> var win = $(window)
+
 
 win.scroll(function(){
 
@@ -134,12 +178,12 @@ win.scroll(function(){
     $('body').addClass('color3');
   }
 
-  else if (winTop >= 1520 && winTop < 1700) {
+  else if (winTop >= 1520 && winTop < 1900) {
     $('body').removeClass('color1 color3');
     $('body').addClass('color2');
   }
 
-  else if (winTop >= 1700 ) {
+  else if (winTop >= 1900 ) {
     $('body').removeClass('color2 color3');
     $('body').addClass('color1');
   }
@@ -148,6 +192,7 @@ win.scroll(function(){
 
 });
 </script> -->
+
 
 <script type="text/javascript">
 
@@ -162,5 +207,24 @@ win.scroll(function(){
  })();
 </script>
 
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel({
+      interval: 4000
+    });
+  });
+
+var browser = $.browser;
+ var isChrome = true;
+ if ( browser && ( ! browser.chrome ) ) {
+ isChrome = false;
+ }
+ if ( ! isChrome ) {
+ $('#install-button').hide();
+ $('#wrong-browser').show();
+ }
+ </script>
+
 </body>
 </html>
+
